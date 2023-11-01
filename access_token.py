@@ -2,9 +2,9 @@ import requests
 from azure.storage.blob import BlobServiceClient
 
 # Your Facebook App's credentials
-APP_ID = ''
-APP_SECRET = ''
-SHORT_LIVED_TOKEN = ''
+APP_ID = '' #fill the credentials
+APP_SECRET = '' #fill the credentials
+SHORT_LIVED_TOKEN = '' #fill the generated access token
 
 try:
     # Construct the URL for token exchange
@@ -27,7 +27,7 @@ except Exception as e:
     print(f"An error occurred: {e}")
 
 # Create a BlobServiceClient using the connection string
-connection_string = ""
+connection_string = "" #fill the credentials
 blob_service_client = BlobServiceClient.from_connection_string(connection_string)
 
 # Azure Blob Storage container and blob details
